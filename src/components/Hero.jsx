@@ -1,3 +1,5 @@
+import { contact } from '../data/portfolio'
+
 function Hero() {
   return (
     <section
@@ -17,11 +19,11 @@ function Hero() {
           Avishek Kumar
         </h1>
         <p className="mt-3 text-[clamp(1.25rem,3vw,1.75rem)] font-medium text-gray-600 dark:text-gray-400">
-          Full Stack Developer
+          Full-Stack Software Developer
         </p>
-        <p className="mt-6 max-w-[34rem] text-[1.0625rem] leading-relaxed text-gray-600 dark:text-gray-400">
-          I build clean, performant web experiences — turning ideas into polished
-          products with modern tools and thoughtful design.
+        <p className="mt-6 max-w-[40rem] text-[1.0625rem] leading-relaxed text-gray-600 dark:text-gray-400">
+          3+ years building scalable web apps with React, Next.js, Node.js, and
+          TypeScript — shipped 10+ production products for 4,000+ users.
         </p>
 
         <div className="mt-9 flex flex-col gap-3.5 sm:flex-row sm:flex-wrap">
@@ -41,7 +43,7 @@ function Hero() {
 
         <div className="mt-12 flex flex-wrap items-center gap-3">
           <a
-            href="https://github.com"
+            href={contact.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
@@ -51,7 +53,7 @@ function Hero() {
           </a>
           <span className="size-1 rounded-full bg-gray-300 dark:bg-gray-700" aria-hidden="true" />
           <a
-            href="https://linkedin.com"
+            href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
@@ -61,7 +63,7 @@ function Hero() {
           </a>
           <span className="size-1 rounded-full bg-gray-300 dark:bg-gray-700" aria-hidden="true" />
           <a
-            href="mailto:hello@example.com"
+            href={`mailto:${contact.email}`}
             className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
             aria-label="Email"
           >
