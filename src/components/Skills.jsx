@@ -16,16 +16,20 @@ function Skills() {
           {skillGroups.map(({ title, skills }) => (
             <div
               key={title}
-              className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-950"
+              className="group rounded-xl border border-gray-200 bg-white p-6 transition hover:border-accent/25 hover:shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:hover:border-accent-dark/25"
             >
-              <h3 className="mb-4 text-lg font-semibold text-gray-900 dark:text-gray-100">
+              <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
+                <span
+                  className="size-2 rounded-full bg-accent transition group-hover:scale-125 dark:bg-accent-dark"
+                  aria-hidden="true"
+                />
                 {title}
               </h3>
               <ul className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <li
                     key={skill}
-                    className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300"
+                    className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-700 transition hover:border-accent/30 hover:bg-accent/5 hover:text-accent dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-accent-dark/30 dark:hover:bg-accent-dark/8 dark:hover:text-accent-dark"
                   >
                     {skill}
                   </li>

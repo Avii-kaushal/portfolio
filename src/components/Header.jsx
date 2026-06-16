@@ -3,6 +3,7 @@ import { useState } from 'react'
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
@@ -19,9 +20,9 @@ function Header() {
           className="flex items-center gap-2.5 text-gray-900 no-underline dark:text-gray-100"
         >
           <span className="grid size-9 place-items-center rounded-lg bg-accent text-sm font-semibold text-white dark:bg-accent-dark">
-            P
+            AK
           </span>
-          <span className="text-lg font-semibold tracking-tight">Portfolio</span>
+          <span className="text-lg font-semibold tracking-tight">Avishek Kumar</span>
         </a>
 
         <nav
