@@ -1,127 +1,205 @@
-import { contact, heroTech, highlights, profile } from '../data/portfolio'
+import { contact, heroTech, highlights, profile } from "../data/portfolio";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[calc(100svh-4.25rem)] items-center overflow-hidden px-6 py-16 md:px-6 md:py-20"
+      className="relative min-h-screen overflow-hidden px-6 py-20 flex items-center"
     >
-      <div
-        className="pointer-events-none absolute -top-[20%] -right-[10%] size-[min(600px,80vw)] animate-pulse-slow rounded-full bg-[radial-gradient(circle,color-mix(in_srgb,var(--color-accent)_25%,transparent)_0%,transparent_70%)] dark:bg-[radial-gradient(circle,color-mix(in_srgb,var(--color-accent-dark)_25%,transparent)_0%,transparent_70%)]"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute -bottom-[30%] -left-[15%] size-[min(400px,60vw)] animate-pulse-slow rounded-full bg-[radial-gradient(circle,color-mix(in_srgb,var(--color-accent)_12%,transparent)_0%,transparent_70%)] [animation-delay:2s] dark:bg-[radial-gradient(circle,color-mix(in_srgb,var(--color-accent-dark)_12%,transparent)_0%,transparent_70%)]"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,color-mix(in_srgb,var(--color-accent)_4%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_srgb,var(--color-accent)_4%,transparent)_1px,transparent_1px)] [background-size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]"
-        aria-hidden="true"
-      />
+      {/* Background Effects */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-[120px]" />
+        <div className="absolute top-1/3 right-1/2 h-[400px] w-[400px] rounded-full bg-cyan-500/10 blur-[100px]" />
 
-      <div className="relative mx-auto w-full max-w-6xl text-left">
-        <div className="animate-fade-up mb-6 flex flex-wrap items-center gap-3">
-          <span className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/8 px-3.5 py-1.5 text-sm font-medium text-accent dark:border-accent-dark/30 dark:bg-accent-dark/10 dark:text-accent-dark">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60 dark:bg-accent-dark" />
-              <span className="relative inline-flex size-2 rounded-full bg-accent dark:bg-accent-dark" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+      </div>
+
+      <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
+        {/* LEFT SIDE */}
+        <div>
+          {/* Availability */}
+          <div className="mb-6 flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-500">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+              </span>
+              {profile.availability}
             </span>
-            {profile.availability}
-          </span>
-          <span className="text-sm text-gray-500 dark:text-gray-500">{profile.location}</span>
-        </div>
 
-        <p className="animate-fade-up animation-delay-100 mb-3 text-lg font-medium text-accent dark:text-accent-dark">
-          Hi, I'm
-        </p>
-        <h1 className="animate-fade-up animation-delay-200 m-0 text-[clamp(2.75rem,8vw,4.5rem)] leading-[1.05] font-bold tracking-tight">
-          <span className="bg-gradient-to-br from-gray-900 via-gray-800 to-accent bg-clip-text text-transparent dark:from-gray-100 dark:via-gray-200 dark:to-accent-dark">
-            {profile.name}
-          </span>
-        </h1>
-        <p className="animate-fade-up animation-delay-300 mt-3 text-[clamp(1.25rem,3vw,1.75rem)] font-medium text-gray-600 dark:text-gray-400">
-          {profile.title}
-        </p>
-        <p className="animate-fade-up animation-delay-400 mt-6 max-w-[40rem] text-[1.0625rem] leading-relaxed text-gray-600 dark:text-gray-400">
-          {profile.tagline} Shipped{' '}
-          <span className="font-semibold text-gray-900 dark:text-gray-100">10+ production apps</span>{' '}
-          for{' '}
-          <span className="font-semibold text-gray-900 dark:text-gray-100">4,000+ users</span> with
-          React, Next.js, Node.js, and TypeScript.
-        </p>
+            <span className="text-sm text-gray-500">
+              📍 {profile.location}
+            </span>
+          </div>
 
-        <ul className="animate-fade-up animation-delay-500 mt-6 flex flex-wrap gap-2">
-          {heroTech.map((tech) => (
-            <li
-              key={tech}
-              className="rounded-full border border-gray-200 bg-white/80 px-3 py-1 text-sm font-medium text-gray-700 backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60 dark:text-gray-300"
+          {/* Intro */}
+          <p className="mb-3 text-lg font-medium text-blue-600">
+            Hi, I'm
+          </p>
+
+          <h1 className="text-[clamp(3rem,8vw,5.5rem)] font-black leading-none tracking-tight">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-cyan-500 bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+              {profile.name}
+            </span>
+          </h1>
+
+          <h2 className="mt-4 text-[clamp(1.3rem,3vw,2rem)] font-semibold text-gray-700 dark:text-gray-300">
+            {profile.title}
+          </h2>
+
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+            {profile.tagline}
+          </p>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium text-gray-500">
+            <span>✓ 10+ Production Apps</span>
+            <span>✓ 4000+ Users Served</span>
+            <span>✓ React & Next.js Expert</span>
+            <span>✓ Open To Opportunities</span>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              {tech}
-            </li>
-          ))}
-        </ul>
+              View Projects
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
 
-        <div className="animate-fade-up animation-delay-600 mt-9 flex flex-col gap-3.5 sm:flex-row sm:flex-wrap">
-          <a
-            href="#projects"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-[0.9375rem] font-medium text-white no-underline shadow-lg shadow-accent/20 transition hover:-translate-y-0.5 hover:opacity-90 sm:w-auto dark:bg-accent-dark dark:shadow-accent-dark/20"
-          >
-            View Projects
-            <span aria-hidden="true">→</span>
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex w-full items-center justify-center rounded-lg border-[1.5px] border-gray-200 bg-transparent px-6 py-3 text-[0.9375rem] font-medium text-gray-900 no-underline transition hover:-translate-y-0.5 hover:border-accent hover:text-accent sm:w-auto dark:border-gray-700 dark:text-gray-100 dark:hover:border-accent-dark dark:hover:text-accent-dark"
-          >
-            Contact Me
-          </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center rounded-xl border border-gray-300 px-7 py-4 font-semibold transition-all duration-300 hover:border-blue-600 hover:text-blue-600"
+            >
+              Contact Me
+            </a>
+          </div>
+
+          {/* Tech Stack */}
+          <div className="mt-10 flex flex-wrap gap-3">
+            {heroTech.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-900/60 dark:text-gray-300"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          {/* Social Links */}
+          <div className="mt-10 flex flex-wrap items-center gap-5">
+            <a
+              href={contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-gray-600 transition hover:text-blue-600 dark:text-gray-400"
+            >
+              GitHub
+            </a>
+
+            <span className="h-1 w-1 rounded-full bg-gray-400"></span>
+
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-gray-600 transition hover:text-blue-600 dark:text-gray-400"
+            >
+              LinkedIn
+            </a>
+
+            <span className="h-1 w-1 rounded-full bg-gray-400"></span>
+
+            <a
+              href={`mailto:${contact.email}`}
+              className="font-medium text-gray-600 transition hover:text-blue-600 dark:text-gray-400"
+            >
+              Email
+            </a>
+          </div>
         </div>
 
-        <dl className="animate-fade-up animation-delay-700 mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {highlights.map(({ value, label }) => (
-            <div key={label}>
-              <dt className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                {value}
-              </dt>
-              <dd className="mt-0.5 text-xs font-medium text-gray-500 sm:text-sm dark:text-gray-500">
-                {label}
-              </dd>
+        {/* RIGHT SIDE */}
+        <div className="relative hidden lg:flex justify-center">
+          <div className="relative">
+            {/* Glow */}
+            <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl"></div>
+
+            {/* Profile Image */}
+            <div className="relative h-[420px] w-[420px] overflow-hidden rounded-full border-4 border-white bg-gradient-to-br from-blue-500 via-purple-500 to-cyan-500 p-2 shadow-2xl dark:border-gray-800">
+              <img
+                src="/images/profile.jpg"
+                alt={profile.name}
+                className="h-full w-full rounded-full object-cover"
+              />
+            </div>
+
+            {/* Floating Card 1 */}
+            <div className="absolute -left-10 top-12 rounded-2xl border border-white/20 bg-white/80 p-5 shadow-xl backdrop-blur-md dark:bg-gray-900/80">
+              <h3 className="text-3xl font-bold">
+                10+
+              </h3>
+              <p className="text-sm text-gray-500">
+                Projects Delivered
+              </p>
+            </div>
+
+            {/* Floating Card 2 */}
+            <div className="absolute -right-8 bottom-20 rounded-2xl border border-white/20 bg-white/80 p-5 shadow-xl backdrop-blur-md dark:bg-gray-900/80">
+              <h3 className="text-3xl font-bold">
+                4000+
+              </h3>
+              <p className="text-sm text-gray-500">
+                Active Users
+              </p>
+            </div>
+
+            {/* Floating Card 3 */}
+            <div className="absolute left-1/2 -bottom-8 -translate-x-1/2 rounded-2xl border border-white/20 bg-white/80 px-6 py-4 shadow-xl backdrop-blur-md dark:bg-gray-900/80">
+              <p className="font-semibold">
+                🚀 Building Scalable Products
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Section */}
+      <div className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 xl:block">
+        <div className="flex items-center gap-10 rounded-2xl border border-white/10 bg-white/60 px-8 py-4 shadow-xl backdrop-blur-md dark:bg-gray-900/40">
+          {highlights.map((item) => (
+            <div key={item.label}>
+              <h3 className="text-center text-2xl font-bold">
+                {item.value}
+              </h3>
+              <p className="text-sm text-gray-500">
+                {item.label}
+              </p>
             </div>
           ))}
-        </dl>
+        </div>
+      </div>
 
-        <div className="animate-fade-up animation-delay-800 mt-10 flex flex-wrap items-center gap-3">
-          <a
-            href={contact.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
-            aria-label="GitHub"
-          >
-            GitHub
-          </a>
-          <span className="size-1 rounded-full bg-gray-300 dark:bg-gray-700" aria-hidden="true" />
-          <a
-            href={contact.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
-            aria-label="LinkedIn"
-          >
-            LinkedIn
-          </a>
-          <span className="size-1 rounded-full bg-gray-300 dark:bg-gray-700" aria-hidden="true" />
-          <a
-            href={`mailto:${contact.email}`}
-            className="text-sm font-medium text-gray-600 no-underline transition hover:text-accent dark:text-gray-400 dark:hover:text-accent-dark"
-            aria-label="Email"
-          >
-            Email
-          </a>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-5 left-1/2 hidden -translate-x-1/2 md:block">
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-xs text-gray-500">
+            Scroll Down
+          </span>
+
+          <div className="flex h-10 w-6 justify-center rounded-full border border-gray-400">
+            <div className="mt-2 h-2 w-2 animate-bounce rounded-full bg-blue-600"></div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
