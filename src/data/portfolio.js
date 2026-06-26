@@ -1,3 +1,24 @@
+import {
+  SiReact,
+  SiNextdotjs,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiTailwindcss,
+  SiRedux,
+  SiReactquery,
+  SiNodedotjs,
+  SiExpress,
+  SiPython,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiNeo4J,
+  SiGit,
+  SiVercel,
+} from "react-icons/si";
+
+
 export const profile = {
   name: 'Avishek Kumar',
   title: 'Full-Stack Software Developer',
@@ -7,7 +28,7 @@ export const profile = {
 }
 
 export const summary =
-  'Full-Stack Developer with 3+ years shipping production web apps across the React and Node ecosystems. I specialize in performance optimization, REST API design, and AI-assisted product development — delivering measurable gains in speed, conversion, and user engagement for 4,000+ active users.'
+  'I am a Software Developer with 4 years of experience building scalable, high-performance web applications using React.js, Next.js, Vue.js, Node.js, Express.js, SQL, MongoDB, and TypeScript. I specialize in end-to-end full-stack development — responsive Ul architecture, reusable component systems, REST API design and integration, database modeling, and production deployment — with a strong focus on performance optimization, code maintainability, and user experience. I am also experienced in Al-powered application development, rapid prototyping using Al-assisted workflows, and collaborating with cross-functional teams in Agile environments.'
 
 export const highlights = [
   { value: '3+', label: 'Years of experience' },
@@ -20,31 +41,64 @@ export const heroTech = ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQ
 
 export const experience = [
   {
-    role: 'Full-Stack Software Developer',
-    company: 'Product Studio',
-    period: '2023 — Present',
-    summary:
-      'Own end-to-end delivery of customer-facing web applications serving thousands of active users.',
-    achievements: [
-      'Reduced page load times by 40% through code splitting, lazy loading, and Core Web Vitals optimization',
-      'Designed REST APIs with role-based access control, streamlining enterprise client onboarding',
-      'Shipped 5+ production features using AI-assisted workflows, cutting delivery cycles by 30%',
+    position: "Software Developer",
+    company: "Paladin Tech AI",
+    period: "Feb 2025 - Present",
+    location: "Chandigarh",
+    description: "Developed and deployed 5+ production-grade web applications using React.js, Next.js, and TypeScript. Built an AI Deepfake Detection platform, Phonetic Call Analysis system, and Big Data Analytics platform with Neo4j visualizations. Rebuilt company website with Next.js reducing load times by 20%.",
+    responsibilities: [
+      "Developed and deployed 5+ production-grade web applications using React.js, Next.js, and TypeScript, ensuring scalability, modularity, and long-term maintainability.",
+      "Built an AI-powered Deepfake Detection platform, integrating Python APIs for media analysis and detection workflows.",
+      "Developed a Phonetic Call Analysis system with interactive dashboards, real-time filtering, and AI-driven insights.",
+      "Engineered a Big Data Analytics platform with Neo4j-powered graph visualizations for exploring complex entity relationships.",
+      "Rebuilt the company website with Next.js, reducing page load time by 20% and increasing organic traffic by 30%.",
+      "Improved application performance through lazy loading, code splitting, memoization, and Core Web Vitals optimization.",
+      "Collaborated with Backend and AI/ML teams in Agile environments to deliver production-ready features."
     ],
-    tech: ['React.js', 'Next.js', 'Node.js', 'PostgreSQL', 'TypeScript'],
+    technologies: ["React.js", "Next.js", "TypeScript", "Python", "Neo4j", "Agile"]
   },
   {
-    role: 'Frontend Developer',
-    company: 'Digital Agency',
-    period: '2022 — 2023',
-    summary:
-      'Built responsive, accessible interfaces for marketing and SaaS clients with a focus on conversion.',
-    achievements: [
-      'Delivered 4+ client projects on time using React, Redux Toolkit, and Tailwind CSS',
-      'Improved lead conversion rates through A/B-tested landing pages and WCAG-compliant UI patterns',
-      'Established reusable component libraries that reduced development time across projects by 25%',
+    position: "Software Developer",
+    company: "Webtunix Solution Pvt. Ltd.",
+    period: "Jul 2024 - Feb 2025",
+    location: "Chandigarh",
+    description: "Built an AI-powered Dating Platform supporting 1,000+ active users and 500+ daily API hits. Developed an AI-powered Chatbot Platform with conversational UI, context-aware responses, and persistent chat history.",
+    responsibilities: [
+      "Built an AI-powered Dating Platform — users generate AI personas (photos & videos) and chat with AI characters in real time — scaled to ~1,000+ active users with 500+ API hits daily.",
+      "Developed an AI-powered Chatbot Platform with conversational UI, context-aware responses, and persistent chat history for seamless multi-turn interactions.",
+      "Delivered user and admin dashboards with role-based access control, analytics, and advanced filtering capabilities."
     ],
-    tech: ['React.js', 'Redux Toolkit', 'Tailwind CSS', 'JavaScript'],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "SQL", "JavaScript", "Python"]
   },
+  {
+    position: "Software Developer",
+    company: "Bitfrills Solutions Inc.",
+    period: "Jul 2022 - Jul 2024",
+    location: "Chandigarh",
+    description: "Developed frontend and backend features for SportsX9 supporting 2,000+ active users and 1,000+ daily API requests. Built Payro Finance, a business lending platform with streamlined user onboarding and loan workflows.",
+    responsibilities: [
+      "Developed frontend and backend features for SportsX9, supporting 2,000+ active users and 1,000+ daily API requests.",
+      "Built end-to-end features using React.js, Node.js, and Express.js, from responsive UI development to REST API implementation.",
+      "Developed User and Admin dashboards with role-based access control, dynamic reporting, and secure workflows.",
+      "Built Payro Finance, a lending platform that helps small businesses access financing through a streamlined digital loan application process.",
+      "Developed core frontend and backend features, including user onboarding, loan workflows, API integrations, and admin management tools."
+    ],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "SQL", "REST APIs"]
+  },
+  {
+    position: "Full Stack Development Trainee",
+    company: "Newton School",
+    period: "Feb 2022 - Jul 2022",
+    location: "Chandigarh",
+    description: "Completed intensive training in full-stack development, MERN stack, database design, and DS&A. Built full-stack e-commerce applications, dashboard analytics, and resolved complex algorithms.",
+    responsibilities: [
+      "Completed an intensive Full Stack Web Development program covering frontend, backend, REST API development, SQL & MongoDB database management, and deployment.",
+      "Built full-stack and e-commerce applications including auth systems, admin dashboards, cart/checkout flows, and responsive UIs using the MERN stack.",
+      "Worked with MongoDB aggregation pipelines and SQL joins to power dynamic reports and data-driven features.",
+      "Solved Data Structures & Algorithms problems across arrays, trees, recursion, sorting, searching, and dynamic programming."
+    ],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "SQL", "JavaScript", "HTML", "CSS", "DSA"]
+  }
 ]
 
 export const skillGroups = [
@@ -111,30 +165,111 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: 'Scalable SaaS Dashboard',
-    description:
-      'Full-stack platform with role-based access, real-time analytics, and optimized database queries — built to handle growth without rewrites.',
-    impact: '2,000+ active users',
-    stack: ['React.js', 'Node.js', 'PostgreSQL', 'TypeScript'],
-    featured: true,
+    id: 1,
+    title: "AI Deepfake Detection Platform",
+    category: "AI & Cybersecurity",
+    technologies: "Python, Next.js, FastAPI, PyTorch, React, TypeScript",
+    image: "/images/project-1.webp",
+    description: "An AI-powered media analysis and deepfake detection platform integrating Python APIs for media processing and detection workflows."
   },
   {
-    title: 'AI-Powered Product Platform',
-    description:
-      'Next.js application integrating AI-assisted workflows and REST APIs for rapid feature iteration and faster go-to-market.',
-    impact: '30% faster delivery',
-    stack: ['Next.js', 'Python', 'REST APIs', 'MongoDB'],
-    featured: true,
+    id: 2,
+    title: "Phonetic Call Analysis System",
+    category: "Speech AI & Analytics",
+    technologies: "React.js, Python, Node.js, Express.js, WebSockets, Chart.js",
+    image: "/images/project-2.webp",
+    description: "Interactive real-time call analysis platform featuring phonetic search, sentiment tracking, and conversational dashboards."
   },
   {
-    title: 'High-Performance Marketing Site',
-    description:
-      'Production site engineered for Core Web Vitals, accessibility, and lead conversion with measurable traffic gains.',
-    impact: '40% load time reduction',
-    stack: ['Next.js', 'Tailwind CSS', 'Vercel', 'React Query'],
-    featured: false,
+    id: 3,
+    title: "Big Data Analytics Platform",
+    category: "Graph DB & Analytics",
+    technologies: "Neo4j, React, TypeScript, Node.js, Express, Tailwind CSS",
+    image: "/images/project-3.webp",
+    description: "Relationship discovery platform using Neo4j graph databases and interactive UI networks to explore complex entity linkages."
   },
+  {
+    id: 4,
+    title: "AI Dating Platform",
+    category: "AI / Social Application",
+    technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Python",
+    image: "/images/project-4.webp",
+    description: "A dating application where users generate AI personas and chat with characters in real time, scaled to 1,000+ active users."
+  },
+  {
+    id: 5,
+    title: "AI Chatbot Platform",
+    category: "Conversational AI",
+    technologies: "React.js, Node.js, Express.js, MongoDB, OpenAI API",
+    image: "/images/project-5.webp",
+    description: "A context-aware chatbot platform featuring dynamic chat workflows, persistent history, and role-based admin panels."
+  },
+  {
+    id: 6,
+    title: "SportsX9 Web Application",
+    category: "Full Stack Web App",
+    technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Redis",
+    image: "/images/placeholder.webp",
+    description: "High-traffic sports gaming platform supporting 2,000+ active users and 1,000+ daily API requests with optimized caching."
+  },
+  {
+    id: 7,
+    title: "Payro Finance Lending",
+    category: "Fintech Platform",
+    technologies: "React.js, Node.js, Express.js, MongoDB, RESTful APIs",
+    image: "/images/placeholder.webp",
+    description: "A business financing portal streamlining user onboarding, document uploads, loan approvals, and loan workflows."
+  },
+  {
+    id: 8,
+    title: "MERN E-commerce System",
+    category: "E-commerce & Analytics",
+    technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Tailwind CSS",
+    image: "/images/placeholder.webp",
+    description: "Complete checkout flow system featuring admin panels, aggregation pipelines, and responsive design systems."
+  }
 ]
+
+
+export const skills = {
+  develop: {
+    title: "FRONTEND DEVELOPMENT",
+    description: "Modern UI/UX & Responsive Web Applications",
+    details:
+      "Building responsive and performant web applications using React.js, Next.js, and TypeScript.",
+
+    tools: [
+      { name: "React.js", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: SiHtml5 },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Redux Toolkit", icon: SiRedux },
+      { name: "React Query", icon: SiReactquery },
+    ],
+  },
+
+  design: {
+    title: "BACKEND & AI",
+    description: "Scalable APIs, Databases & AI Solutions",
+    details:
+      "Building backend services using Node.js, Express.js and Python.",
+
+    tools: [
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Python", icon: SiPython },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "Neo4j", icon: SiNeo4J },
+      { name: "Git", icon: SiGit },
+      { name: "Vercel", icon: SiVercel },
+    ],
+  },
+};
 
 export const contact = {
   email: 'hello@example.com',
