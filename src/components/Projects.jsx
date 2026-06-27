@@ -68,12 +68,12 @@ const Projects = () => {
   return (
     <section
       id="work"
-      className="work-section h-auto md:h-screen overflow-hidden"
+      className="reveal-section work-section h-auto overflow-hidden px-6 py-20 md:h-screen md:px-8 lg:px-10"
     >
       <div className="work-container mx-auto flex h-full flex-col px-5 lg:px-10">
 
-        <h2 className="mt-14 md:mt-20 lg:mt-24 text-4xl md:text-5xl lg:text-7xl font-medium">
-          My <span className="text-primary">Work</span>
+        <h2 className="mt-14 text-4xl font-semibold tracking-tight text-gray-900 md:mt-20 md:text-5xl lg:mt-24 lg:text-7xl dark:text-white">
+          My <span className="bg-gradient-to-r from-sky-500 via-indigo-500 to-fuchsia-500 bg-clip-text text-transparent">Work</span>
         </h2>
 
         <div
@@ -123,11 +123,17 @@ const Projects = () => {
                 border-b
                 md:border-b-0
                 md:border-r
-                border-zinc-700
+                border-gray-200/80
+                bg-white/70
                 p-5
+                shadow-[0_24px_65px_-25px_rgba(15,23,42,0.25)]
+                backdrop-blur-xl
+                transition-all duration-500
+                hover:-translate-y-2 hover:shadow-[0_32px_80px_-24px_rgba(59,130,246,0.28)]
                 md:p-8
                 lg:p-12
                 xl:p-20
+                dark:border-gray-800/70 dark:bg-gray-900/70
               "
             >
               <div>
@@ -151,7 +157,7 @@ const Projects = () => {
                   Tools and Features
                 </h4>
 
-                <p className="text-gray-400 leading-7">
+                <p className="leading-7 text-gray-500 dark:text-gray-400">
                   {project.technologies}
                 </p>
               </div>
@@ -195,10 +201,10 @@ const Projects = () => {
                 className="
                   mt-2
                   rounded-full
-                  bg-primary
+                  bg-gradient-to-r from-sky-500 via-indigo-500 to-fuchsia-500
                   px-8
                   py-4
-                  text-black
+                  text-white
                   font-medium
                   transition
                   duration-300

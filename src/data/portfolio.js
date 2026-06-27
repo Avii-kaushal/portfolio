@@ -60,7 +60,7 @@ export const experience = [
   {
     position: "Software Developer",
     company: "Webtunix Solution Pvt. Ltd.",
-    period: "Jul 2024 - Feb 2025",
+    period: "2024",
     location: "Chandigarh",
     description: "Built an AI-powered Dating Platform supporting 1,000+ active users and 500+ daily API hits. Developed an AI-powered Chatbot Platform with conversational UI, context-aware responses, and persistent chat history.",
     responsibilities: [
@@ -73,7 +73,7 @@ export const experience = [
   {
     position: "Software Developer",
     company: "Bitfrills Solutions Inc.",
-    period: "Jul 2022 - Jul 2024",
+    period: "2022",
     location: "Chandigarh",
     description: "Developed frontend and backend features for SportsX9 supporting 2,000+ active users and 1,000+ daily API requests. Built Payro Finance, a business lending platform with streamlined user onboarding and loan workflows.",
     responsibilities: [
@@ -88,7 +88,7 @@ export const experience = [
   {
     position: "Full Stack Development Trainee",
     company: "Newton School",
-    period: "Feb 2022 - Jul 2022",
+    period: "2022",
     location: "Chandigarh",
     description: "Completed intensive training in full-stack development, MERN stack, database design, and DS&A. Built full-stack e-commerce applications, dashboard analytics, and resolved complex algorithms.",
     responsibilities: [
@@ -169,7 +169,7 @@ export const projects = [
     title: "AI Deepfake Detection Platform",
     category: "AI & Cybersecurity",
     technologies: "Python, Next.js, FastAPI, PyTorch, React, TypeScript",
-    image: "/images/project-1.webp",
+    image: "/images/project-1.svg",
     description: "An AI-powered media analysis and deepfake detection platform integrating Python APIs for media processing and detection workflows."
   },
   {
@@ -177,7 +177,7 @@ export const projects = [
     title: "Phonetic Call Analysis System",
     category: "Speech AI & Analytics",
     technologies: "React.js, Python, Node.js, Express.js, WebSockets, Chart.js",
-    image: "/images/project-2.webp",
+    image: "/images/project-2.svg",
     description: "Interactive real-time call analysis platform featuring phonetic search, sentiment tracking, and conversational dashboards."
   },
   {
@@ -185,7 +185,7 @@ export const projects = [
     title: "Big Data Analytics Platform",
     category: "Graph DB & Analytics",
     technologies: "Neo4j, React, TypeScript, Node.js, Express, Tailwind CSS",
-    image: "/images/project-3.webp",
+    image: "/images/project-3.svg",
     description: "Relationship discovery platform using Neo4j graph databases and interactive UI networks to explore complex entity linkages."
   },
   {
@@ -193,7 +193,7 @@ export const projects = [
     title: "AI Dating Platform",
     category: "AI / Social Application",
     technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Python",
-    image: "/images/project-4.webp",
+    image: "/images/project-4.svg",
     description: "A dating application where users generate AI personas and chat with characters in real time, scaled to 1,000+ active users."
   },
   {
@@ -201,7 +201,7 @@ export const projects = [
     title: "AI Chatbot Platform",
     category: "Conversational AI",
     technologies: "React.js, Node.js, Express.js, MongoDB, OpenAI API",
-    image: "/images/project-5.webp",
+    image: "/images/project-5.svg",
     description: "A context-aware chatbot platform featuring dynamic chat workflows, persistent history, and role-based admin panels."
   },
   {
@@ -209,7 +209,7 @@ export const projects = [
     title: "SportsX9 Web Application",
     category: "Full Stack Web App",
     technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Redis",
-    image: "/images/placeholder.webp",
+    image: "/images/project-6.svg",
     description: "High-traffic sports gaming platform supporting 2,000+ active users and 1,000+ daily API requests with optimized caching."
   },
   {
@@ -217,7 +217,7 @@ export const projects = [
     title: "Payro Finance Lending",
     category: "Fintech Platform",
     technologies: "React.js, Node.js, Express.js, MongoDB, RESTful APIs",
-    image: "/images/placeholder.webp",
+    image: "/images/project-7.svg",
     description: "A business financing portal streamlining user onboarding, document uploads, loan approvals, and loan workflows."
   },
   {
@@ -225,7 +225,7 @@ export const projects = [
     title: "MERN E-commerce System",
     category: "E-commerce & Analytics",
     technologies: "React.js, Node.js, Express.js, MongoDB, SQL, Tailwind CSS",
-    image: "/images/placeholder.webp",
+    image: "/images/project-8.svg",
     description: "Complete checkout flow system featuring admin panels, aggregation pipelines, and responsive design systems."
   }
 ]

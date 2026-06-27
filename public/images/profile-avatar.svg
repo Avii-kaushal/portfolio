@@ -1,0 +1,19 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#07111f"/>
+  <circle cx="450" cy="390" r="260" fill="url(#g)"/>
+  <circle cx="450" cy="330" r="180" fill="#f7d7c0"/>
+  <path d="M268 850c38-176 144-264 182-264 116 0 182 182 182 264" fill="#3b82f6"/>
+  <path d="M330 352c30-138 120-200 180-200 112 0 186 98 186 220" fill="#0f172a"/>
+  <circle cx="380" cy="330" r="18" fill="#111827"/>
+  <circle cx="520" cy="330" r="18" fill="#111827"/>
+  <path d="M390 440c42 46 78 46 120 0" stroke="#a16207" stroke-width="18" stroke-linecap="round"/>
+  <rect x="138" y="120" width="624" height="90" rx="24" fill="#ffffff" opacity="0.12"/>
+  <text x="450" y="174" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="42" font-weight="700">AVISHEK</text>
+  <defs>
+    <linearGradient id="g" x1="180" y1="170" x2="720" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="55%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+</svg>

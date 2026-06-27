@@ -25,7 +25,7 @@ function Contact() {
               href={href}
               target={href.startsWith('mailto:') ? undefined : '_blank'}
               rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-              className="group rounded-xl border border-gray-200 bg-white p-6 no-underline transition hover:border-accent hover:shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:hover:border-accent-dark"
+              className="group rounded-2xl border border-gray-200 bg-white p-6 no-underline shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-400 hover:shadow-[0_20px_50px_-20px_rgba(59,130,246,0.35)] dark:border-gray-800 dark:bg-gray-950 dark:hover:border-sky-500"
             >
               <p className="text-sm font-medium text-gray-500 dark:text-gray-500">{label}</p>
               <p className="mt-2 font-semibold text-gray-900 transition group-hover:text-accent dark:text-gray-100 dark:group-hover:text-accent-dark">
@@ -37,7 +37,7 @@ function Contact() {
 
         <a
           href={`mailto:${contact.email}`}
-          className="mt-8 inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 text-[0.9375rem] font-medium text-white no-underline transition hover:-translate-y-0.5 hover:opacity-90 dark:bg-accent-dark"
+          className="mt-8 inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-sky-500 via-indigo-500 to-fuchsia-500 px-6 py-3 text-[0.9375rem] font-medium text-white no-underline shadow-lg transition hover:-translate-y-1 hover:opacity-90"
         >
           Send an email
         </a>

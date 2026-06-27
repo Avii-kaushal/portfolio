@@ -74,7 +74,7 @@ const Experience = () => {
 
   return (
     <div className="career-section section-container relative mx-auto my-0 mb-[250px] flex flex-col items-center justify-center auto-rows-fr px-0 py-[120px] opacity-100 max-lg:mt-0 max-lg:mb-0 max-lg:py-[70px] max-lg:pt-[100px] max-md:items-start max-md:justify-start">
-      <div className="career-container w-full max-md:w-[calc(100%-25px)]">
+      <div className="career-container w-[1400px] max-md:w-[calc(100%-25px)]">
         <h2 className="mt-[50px] mb-[90px] text-center text-[70px] font-normal leading-[70px] text-transparent bg-gradient-to-t from-[#7f40ff] to-white bg-clip-text max-[1400px]:text-[50px] max-[1400px]:leading-[50px] max-lg:text-[48px] max-lg:leading-[48px] max-md:text-[42px] max-md:leading-[44px] max-sm:mt-0 max-sm:w-full max-sm:text-[45px] max-sm:leading-[45px]">
           My career <span className="font-sans font-light">&</span>
           <br /> experience
