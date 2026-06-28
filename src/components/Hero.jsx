@@ -2,18 +2,12 @@ import { contact, heroTech, highlights, profile } from "../data/portfolio";
 
 function Hero() {
   return (
-    <section
-  id="home"
-  className="relative min-h-screen overflow-hidden text-white bg-cover bg-no-repeat bg-center"
-  style={{
-    backgroundImage: "url('/images/mine.png')",
-  }}
->
+    <section id="home" className="relative min-h-screen overflow-hidden bg-[#08050b] text-white bg-img-/images/mine.jpeg">
 
       {/* Background */}
       <div className="absolute inset-0">
         {/* Noise / Gradient */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0d0812] via-[#08050b] to-black" /> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d0812] via-[#08050b] to-black" />
         {/* Left Glow */}
         <div className="absolute -left-24 -bottom-24 h-72 w-72 rounded-full bg-violet-500/30 blur-[130px]" />
 
