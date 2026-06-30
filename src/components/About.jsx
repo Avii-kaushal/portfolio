@@ -16,7 +16,7 @@ function About() {
             <img
               src="/images/mine.png"
               alt="Profile"
-              className="h-[700px] w-full max-w-lg object-contain"
+              className="h-[700px] w-full max-w-lg object-cover"
             />
           </div>
 
